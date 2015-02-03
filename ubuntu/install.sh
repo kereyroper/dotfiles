@@ -20,13 +20,26 @@ sudo apt-get install --assume-yes \
     lynx \
     mosh \
     neovim \
-    php5 php5-cli \
+    php5 \
+    php5-cli \
     python-software-properties \
     mutt \
     offlineimap \
-    silversearcher-ag \
     tree \
     vim \
     vim-gnome \
     weechat \
-    zsh \
+    zsh
+
+UBUNTU_RELEASE_NUMBER=$(lsb_release -r | grep -oE "[0-9\.]+$")
+echo UBUNTU_RELEASE_NUMBER
+if ( $UBUNTU_RELEASE_NUMBER < "13.01" )
+then
+    echo "Installing ag from ppa"
+    sudo add-apt-repository ppa:pgolm/the-silver-searcher
+    sudo apt-get update
+    sudo apt-get install the-silver-searcher
+else
+    echo "Installing ag from apt-get"
+    sudo apt-get install silversearcher-ag
+fi
