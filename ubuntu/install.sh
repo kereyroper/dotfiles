@@ -36,6 +36,7 @@ echo '------------'
 echo UBUNTU_RELEASE_NUMBER
 echo '------------'
 if ( $UBUNTU_RELEASE_NUMBER < "13.01" )
+if (( $(echo "$UBUNTU_RELEASE_NUMBER < 13.01" | bc -l) ));
 then
     echo "Installing ag from ppa"
     sudo add-apt-repository ppa:pgolm/the-silver-searcher
