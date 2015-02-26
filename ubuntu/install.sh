@@ -32,10 +32,9 @@ sudo apt-get install --assume-yes \
     zsh
 
 UBUNTU_RELEASE_NUMBER=$(lsb_release -r | grep -oE "[0-9\.]+$")
-echo '------------'
+echo "------------"
 echo UBUNTU_RELEASE_NUMBER
-echo '------------'
-if ( $UBUNTU_RELEASE_NUMBER < "13.01" )
+echo "------------"
 if (( $(echo "$UBUNTU_RELEASE_NUMBER < 13.01" | bc -l) ));
 then
     echo "Installing ag from ppa"
