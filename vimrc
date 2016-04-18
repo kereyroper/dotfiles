@@ -32,7 +32,7 @@ set ttyfast                     " Indicates a fast terminal connection
 set backspace=indent,eol,start  " Allow backspaceing over autoindent, line breaks, starts of insert
 set shortmess+=I                " No welcome screen
 set shortmess+=A                " No .swp warning
-set history=200                 " Remember the last 200 :ex commands
+set history=20000               " Remember the last x :ex commands
 set exrc                        " enable per-directory .vimrc files
 set secure                      " disable unsafe commands in local .vimrc files
 
