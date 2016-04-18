@@ -296,21 +296,6 @@ autocmd BufRead,BufNewFile *.scss set filetype=scss
 " When pasting, refill the default register with what you just pasted
 xnoremap p pgvy
 
-" Repurpose arrow keys to navigating windows
-nnoremap <left> <C-w>h
-nnoremap <right> <C-w>l
-nnoremap <up> <C-w>k
-nnoremap <down> <C-w>j
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-
-" To encourage the use of <C-[np]> instead of the arrow keys in ex mode, remap
-" them to use <Up/Down> instead so that they will filter completions
-cnoremap <C-p> <Up>
-cnoremap <C-n> <Down>
-
 " Navigate using displayed lines not actual lines
 nnoremap j gj
 nnoremap k gk
