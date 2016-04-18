@@ -59,7 +59,7 @@ endif
 set scrolloff=7             " Minimal number of screen lines to keep above and below the cursor.
 set visualbell              " Use a visual bell, don't beep!
 set cursorline              " Highlight the current line
-set number                  " Show line numbers
+set relativenumber          " Show line numbers
 set wrap                    " Soft wrap at the window width
 set linebreak               " Break the line on words
 set textwidth=79            " Break lines at just under 80 characters
