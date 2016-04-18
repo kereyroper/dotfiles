@@ -4,7 +4,6 @@ dotfilespath="$HOME/dotfiles"
 
 FILES=(\
     gvim \
-    tmux.conf \
     vim \
     vimrc \
 )
