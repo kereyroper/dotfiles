@@ -3,18 +3,10 @@
 dotfilespath="$HOME/dotfiles"
 
 FILES=(\
-    bashrc \
-    gitconfig \
-    gitignore \
     gvim \
-    mutt \
     tmux.conf \
     vim \
     vimrc \
-    xmobarrc \
-    xmonad \
-    zshenv \
-    zshrc \
 )
 
 # The destination path of a dotfile
