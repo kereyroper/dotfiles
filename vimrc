@@ -47,7 +47,7 @@ set showcmd                 " Show (partial) command in the last line of the scr
 set wildmenu                " Command completion
 set wildmode=list:longest   " List all matches and complete till longest common string
 set laststatus=2            " The last window will have a status line always
-set noshowmode              " Don't show the mode in the last line of the screen, vim-airline takes care of it
+" set noshowmode              " Don't show the mode in the last line of the screen, vim-airline takes care of it
 set ruler                   " Show the line and column number of the cursor position, separated by a comma.
 set lazyredraw              " Don't update the screen while executing macros/commands
 
@@ -108,7 +108,6 @@ set formatoptions=cqrn1
 " Colors
 syntax enable               " This has to come after colorcolumn in order to draw it.
 set t_Co=256                " enable 256 colors
-colorscheme molokai
 
 let g:airline_theme='zenburn'
 
