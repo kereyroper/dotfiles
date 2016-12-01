@@ -13,6 +13,8 @@ set nocompatible " This must be first, because it changes other options
 " other file.
 source $HOME/.vim/plug.vim
 
+source $HOME/.vim/blockdiff.vim
+
 " }}}-------------------------------------------------------------------------
 "   Base Options                                                          {{{
 " ----------------------------------------------------------------------------
